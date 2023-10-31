@@ -20,7 +20,10 @@
 
 sql_create_favorite_foods = """
 
-Your SQL here.
+CREATE TABLE favorite_foods (
+      food_id integer,
+      name text not null,
+      vegetarian integer );
 
 """
 
