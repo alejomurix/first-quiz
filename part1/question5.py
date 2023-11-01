@@ -33,7 +33,8 @@ CREATE TABLE favorite_foods (
 
 sql_alter_tables_with_favorite_food = """
 
-Your SQL here.
+alter table animals add column favorite_food_id integer;
+alter table people add column favorite_food_id integer;
 
 """
 
@@ -43,6 +44,11 @@ Your SQL here.
 
 sql_select_all_vegetarian_pets = """
 
-Your SQL here.
+select a.name, f.name 
+from animals a 
+ inner join favorite_foods f 
+ on a.favorite_food_id = f.food_id 
+where
+ f.vegetarian = 1;
 
 """
