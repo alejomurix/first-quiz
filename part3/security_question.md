@@ -1,11 +1,11 @@
 Basados en OWASP Top 10, enumero las indicaciones para tener en cuenta en la seguridad del sistema: 
 
 A1 – Para evitar fallos en control de acceso, implementar en la API: 
-•	Control de sesiones por tokens.
-•	Tiempos de vida de sesiones.
-•	Control de acceso basado en roles, ya que contamos con usuarios administrativos, atención al cliente y de ventas.
-•	Evitar al máximo la exposición de identificadores en URL.
-•	Monitorización de la aplicación.
+- Control de sesiones por tokens.
+- Tiempos de vida de sesiones.
+- Control de acceso basado en roles, ya que contamos con usuarios administrativos, atención al cliente y de ventas.
+- Evitar al máximo la exposición de identificadores en URL.
+- Monitorización de la aplicación.
 
 A2 – Evitar fallas criptográficas.
 •	Todas las contraseñas deben estar cifradas, incluyendo la de acceso a base de datos, mediante el uso de librerías de algoritmos actuales y seguros.
